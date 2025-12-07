@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Резюме — Romanyuk Erika</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --bg-light: #ffffff;
+    --text-light: #222222;
+    --muted-light: #555555;
+    --accent-light: #004b7c;
+    --bg-dark: #020617;
+    --text-dark: #e5e7eb;
+    --muted-dark: #9ca3af;
+    --accent-dark: #38bdf8;
+  }
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+    background: var(--bg-light);
+    color: var(--text-light);
+  }
+
+  body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 32px auto 40px;
+    padding: 0 16px;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  body.dark .btn {
+    border-color: #1f2937;
+    background: #020617;
+    color: var(--text-dark);
+  }
+
+  .card {
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 20px 18px 24px;
+  }
+
+  body.dark .card {
+    border-color: #1f2937;
+    background: #020617;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0 0 4px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  body.dark .subtitle {
+    color: var(--muted-dark);
+  }
+
+  .contact {
+    font-size: 13px;
+    margin-bottom: 14px;
+    color: #555;
+  }
+
+  body.dark .contact {
+    color: var(--muted-dark);
+  }
+
+  .section {
+    margin-top: 18px;
+  }
+
+  .section h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--accent-light);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  body.dark .section h2 {
+    color: var(--accent-dark);
+  }
+
+  .section p {
+    font-size: 14px;
+    margin: 0 0 4px;
+  }
+
+  ul {
+    padding-left: 18px;
+    margin: 4px 0 0;
+  }
+
+  ul li {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+
+  .job-title {
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .job-meta {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 2px;
+  }
+
+  body.dark .job-meta {
+    color: var(--muted-dark);
+  }
+
+  .two-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 32px;
+  }
+
+  @media (min-width: 820px) {
+    .two-cols {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+  }
+</style>
+</head>
+<body class="light">
+
+<div class="container">
+  <div class="toolbar">
+    <button id="langToggle" class="btn">EN</button>
+    <button id="themeToggle" class="btn">Dark</button>
+    <button id="pdfBtn" class="btn">Download PDF</button>
+  </div>
+
+  <div class="card">
+    <!-- UA CONTENT -->
+    <div id="content-ua">
+      <h1>Романюк Еріка Василівна</h1>
+      <div class="subtitle">Junior Data Engineer / Data Analyst (Power BI, SQL)</div>
+      <div class="contact">
+        Київ, Україна<br>
+        Тел.: +380 68 590 48 56<br>
+        Email: alexera98@gmail.com
+      </div>
+
+      <div class="section">
+        <h2>Профіль</h2>
+        <p>
+          Аналітик даних із досвідом моделювання, ETL та Power BI, яка розвивається у напрямку Data Engineering.
+          Створила з нуля аналітичну систему відділу Key Account: структуру даних, стандартизацію джерел, ETL-процеси,
+          моделі та Power BI-звіти.
+        </p>
+      </div>
+
+      <div class="two-cols">
+        <div>
+          <div class="section">
+            <h2>Досвід роботи</h2>
+
+            <div>
+              <div class="job-title">Аналітик даних / підтримка ключових клієнтів</div>
+              <div class="job-meta">Imperial Tobacco Ukraine — 2021–дотепер</div>
+              <ul>
+                <li>Створення аналітичної системи відділу Key Account.</li>
+                <li>ETL у Power Query: очищення, трансформація, структурування.</li>
+                <li>Power BI: моделі, DAX, оптимізація.</li>
+                <li>Інтеграція Excel, SAP, SharePoint.</li>
+                <li>Обробка файлів із FTP через Power Query.</li>
+                <li>Підтримка стабільності оновлень та користувачів звітності.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="job-title">Фахівець групи підтримки клієнтів</div>
+              <div class="job-meta">Imperial Tobacco Ukraine — 2011–2021</div>
+              <ul>
+                <li>Аналіз дебіторської заборгованості.</li>
+                <li>Формування звітності з продажів.</li>
+                <li>Розробка внутрішньої аналітичної звітності.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="job-title">Бухгалтер-економіст</div>
+              <div class="job-meta">ТОВ «Розум-авто» — 2008–2011</div>
+              <ul>
+                <li>Бухгалтерський та податковий облік.</li>
+                <li>Контроль дебіторської та кредиторської заборгованості.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Освіта</h2>
+            <p>Київський національний університет ім. Т. Шевченка — Прикладна математика (1997–2002)</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="section">
+            <h2>Ключові навички</h2>
+            <ul>
+              <li>SQL, MS SQL Server</li>
+              <li>ETL у Power Query / SQL</li>
+              <li>Power BI (DAX, моделювання даних)</li>
+              <li>Інтеграція даних: SAP, Excel, SharePoint, FTP → Power Query</li>
+              <li>Advanced Excel</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Курси та навчання</h2>
+            <ul>
+              <li>Excel VBA – 2025</li>
+              <li>SQL для бізнес-аналізу – 2023</li>
+              <li>Power BI моделювання – 2022</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Мови</h2>
+            <ul>
+              <li>Українська — вільно</li>
+              <li>Російська — вільно</li>
+              <li>Угорська — вільно</li>
+              <li>Англійська — B1</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EN CONTENT -->
+    <div id="content-en" style="display:none;">
+      <h1>Erika Romanyuk</h1>
+      <div class="subtitle">Junior Data Engineer / Data Analyst (Power BI, SQL)</div>
+      <div class="contact">
+        Kyiv, Ukraine<br>
+        Tel.: +380 68 590 48 56<br>
+        Email: alexera98@gmail.com
+      </div>
+
+      <div class="section">
+        <h2>Profile</h2>
+        <p>
+          Data Analyst with experience in data modelling, ETL and Power BI, transitioning into Data Engineering.
+          Built an end-to-end analytics system for the Key Account department from scratch: data structure, source
+          standardisation, ETL flows, models and Power BI reports.
+        </p>
+      </div>
+
+      <div class="two-cols">
+        <div>
+          <div class="section">
+            <h2>Experience</h2>
+
+            <div>
+              <div class="job-title">Data Analyst / Key Account Support</div>
+              <div class="job-meta">Imperial Tobacco Ukraine — 2021–Present</div>
+              <ul>
+                <li>Designed and implemented the analytics system for the Key Account department.</li>
+                <li>ETL in Power Query: data cleaning, transformation and structuring.</li>
+                <li>Power BI: data models, DAX measures, performance optimisation.</li>
+                <li>Integrating data from Excel, SAP, SharePoint.</li>
+                <li>Processing files from FTP and loading them via Power Query.</li>
+                <li>Ensuring stable data refresh and user support.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="job-title">Customer Support Specialist</div>
+              <div class="job-meta">Imperial Tobacco Ukraine — 2011–2021</div>
+              <ul>
+                <li>Accounts receivable analysis.</li>
+                <li>Sales and performance reporting.</li>
+                <li>Internal analytical reporting for business teams.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="job-title">Economist / Accountant</div>
+              <div class="job-meta">Rozum-Avto LLC — 2008–2011</div>
+              <ul>
+                <li>Accounting and tax reporting.</li>
+                <li>Control of accounts receivable and payable.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Education</h2>
+            <p>Taras Shevchenko National University of Kyiv — Applied Mathematics (1997–2002)</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="section">
+            <h2>Key skills</h2>
+            <ul>
+              <li>SQL, MS SQL Server</li>
+              <li>ETL with Power Query / SQL</li>
+              <li>Power BI (DAX, data modelling)</li>
+              <li>Data integration: SAP, Excel, SharePoint, FTP → Power Query</li>
+              <li>Advanced Excel</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Courses & training</h2>
+            <ul>
+              <li>Excel VBA – 2025</li>
+              <li>SQL for Business Analysis – 2023</li>
+              <li>Power BI Data Modelling – 2022</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Languages</h2>
+            <ul>
+              <li>Ukrainian — fluent</li>
+              <li>Russian — fluent</li>
+              <li>Hungarian — fluent</li>
+              <li>English — B1</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const langBtn = document.getElementById('langToggle');
+  const themeBtn = document.getElementById('themeToggle');
+  const pdfBtn = document.getElementById('pdfBtn');
+  const ua = document.getElementById('content-ua');
+  const en = document.getElementById('content-en');
+
+  langBtn.addEventListener('click', () => {
+    const isUA = ua.style.display !== 'none';
+    if (isUA) {
+      ua.style.display = 'none';
+      en.style.display = 'block';
+      langBtn.textContent = 'UA';
+      document.documentElement.lang = 'en';
+    } else {
+      ua.style.display = 'block';
+      en.style.display = 'none';
+      langBtn.textContent = 'EN';
+      document.documentElement.lang = 'uk';
+    }
+  });
+
+  themeBtn.addEventListener('click', () => {
+    const body = document.body;
+    const isDark = body.classList.contains('dark');
+    if (isDark) {
+      body.classList.remove('dark');
+      themeBtn.textContent = 'Dark';
+    } else {
+      body.classList.add('dark');
+      themeBtn.textContent = 'Light';
+    }
+  });
+
+  pdfBtn.addEventListener('click', () => {
+    window.print();
+  });
+</script>
+
+</body>
+</html>
